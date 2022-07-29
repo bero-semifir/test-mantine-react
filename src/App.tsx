@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import "./App.css";
+import { Center, Container, Footer, MantineProvider } from "@mantine/core";
+import Router from "./shared/Router";
+import { BrowserRouter } from "react-router-dom";
+import NavBar from "./shared/NavBar";
+import { ModalsProvider } from "@mantine/modals";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <BrowserRouter>
+        <NavBar />
+        <Container>
+          <MantineProvider>
+            <ModalsProvider>
+              <Router />
+            </ModalsProvider>
+          </MantineProvider>
+        </Container>
+        <Footer height={10}>
+          <Center>&copy;Benoît Routier</Center>
+        </Footer>
+      </BrowserRouter>
+    </Fragment>
   );
 }
 

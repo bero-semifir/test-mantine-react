@@ -1,0 +1,24 @@
+{
+  "formations": [
+    {
+        "intitule": "TDD",
+        "dateDebut": "2022-07-25",
+        "dateFin": "2022-07-29",
+        "categories": ["test", "bonne pratique", "avancé"]
+    },
+    {
+        "intitule": "React",
+        "dateDebut": "2022-07-25",
+        "dateFin": "2022-07-29",
+        "categories": ["JS", "intermediaire"]
+    },
+    {
+        "intitule": "Javascript",
+        "dateDebut": "2022-07-25",
+        "dateFin": "2022-07-29",
+        "categories": ["JS", "débutant"]
+    }
+  ],
+  "formateurs": [],
+  "organismes": []
+}
